@@ -5,8 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @SpringBootApplication
-@RestController
+@RestController //makes the class to serve REST endpoints
 public class LearningSpringbootAmiApplication {
 
 	public static void main(String[] args) {
@@ -14,8 +16,8 @@ public class LearningSpringbootAmiApplication {
 	}
 
 	@GetMapping //to annotate as RESTful
-	public String hello(){
-		return "Hello World";
+	public List<String> hello(){
+		return List.of("Hello", "World");
 	}
 
 }
