@@ -1,4 +1,4 @@
 package com.springbootlearning.amigos.learning_springbootAmi.student;
 
-public class StudentRepository {
+public interface StudentRepository {
 }
