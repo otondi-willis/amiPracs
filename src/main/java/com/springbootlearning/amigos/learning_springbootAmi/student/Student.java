@@ -1,7 +1,9 @@
 package com.springbootlearning.amigos.learning_springbootAmi.student;
 
-import java.time.LocalDate;
+import jakarta.persistence.Entity;
 
+import java.time.LocalDate;
+@Entity
 public class Student {
     private Long id;
     private String name;
