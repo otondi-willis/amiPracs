@@ -11,6 +11,10 @@ import java.util.List;
 @RestController
 @RequestMapping(path = "api/v1/student")
 public class StudentController {
+    public StudentController(StudentService studentService) {
+        this.studentService = studentService;
+    }
+
     private final StudentService studentService;
     @GetMapping //to annotate as RESTful
     public List<Student> getStudents(){
