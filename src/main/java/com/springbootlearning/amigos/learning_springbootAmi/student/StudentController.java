@@ -18,6 +18,6 @@ public class StudentController {
     private final StudentService studentService;
     @GetMapping //to annotate as RESTful
     public List<Student> getStudents(){
-
+        return studentService.getStudents();
     }
 }
