@@ -10,7 +10,11 @@ import java.time.LocalDate;
 @Table
 public class Student {
     @Id
-    @SequenceGenerator()
+    @SequenceGenerator(
+            name = "student_sequence",
+            sequenceName = "student_sequence",
+            allocationSize = 1
+    )
     private Long id;
     private String name;
     private String email;
