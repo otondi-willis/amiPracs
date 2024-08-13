@@ -1,12 +1,16 @@
 package com.springbootlearning.amigos.learning_springbootAmi.student;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 @Entity
 @Table
 public class Student {
+    @Id
+    @SequenceGenerator()
     private Long id;
     private String name;
     private String email;
