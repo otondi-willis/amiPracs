@@ -7,16 +7,18 @@ import org.springframework.context.annotation.Configuration;
 import java.time.LocalDate;
 import java.time.Month;
 
+import static java.util.Calendar.JANUARY;
+
 @Configuration
 public class StudentConfig {
     @Bean
     CommandLineRunner commandLineRunner(StudentRepository repository){
         return args -> {
-            new Student(2L,
+            new Student(
                     "Willis",
                     "willis.otondi@gmail.com",
-                    LocalDate.of(2000, Month.JANUARY, 5),
-                    21)
+                    LocalDate.of(2000, JANUARY, 5),
+                    21);
         };
     }
 }
