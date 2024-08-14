@@ -10,6 +10,11 @@ import java.util.List;
 @Service //changed from Component for semantics
 public class StudentService {
     private final StudentRepository studentRepository;
+
+    public StudentService(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
+    }
+
     public List<Student> getStudents(){
         return List.of(
                 new Student(2L,
