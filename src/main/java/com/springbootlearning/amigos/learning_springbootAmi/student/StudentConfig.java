@@ -18,16 +18,18 @@ public class StudentConfig {
             Student willis = new Student(
                     "Willis",
                     "willis.otondi@gmail.com",
-                    LocalDate.of(2000, 1, 5),
-                    21);
+                    LocalDate.of(2000, 1, 5));
             Student alice = new Student(
                     "alice",
                     "alice.otondi@gmail.com",
-                    LocalDate.of(2001, 2, 5),
-                    21);
+                    LocalDate.of(2001, 2, 5));
+            Student mungai = new Student(
+                    "mungai",
+                    "alice.otondi@gmail.com",
+                    LocalDate.of(2001, 3, 5));
 
             repository.saveAll(
-                    List.of(willis, alice)
+                    List.of(willis, alice,mungai)
             );
         };
     }
