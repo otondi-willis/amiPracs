@@ -1,7 +1,7 @@
 package com.springbootlearning.amigos.learning_springbootAmi.student;
 
 import jakarta.persistence.*;
-import javax.persistence.*;
+//import javax.persistence.*;
 
 import java.time.LocalDate;
 @Entity
@@ -30,23 +30,21 @@ public class Student {
     public Student(Long id,
                    String name,
                    String email,
-                   LocalDate dob,
-                   Integer age) {
+                   LocalDate dob){
         this.id = id;
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
+
     }
 
     public Student(String name,
                    String email,
-                   LocalDate dob,
-                   Integer age) {
+                   LocalDate dob) {
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
+
     }
 
     public Long getId() {
