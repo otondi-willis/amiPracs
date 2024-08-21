@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
-import static java.util.Calendar.JANUARY;
+import static java.util.Calendar.*;
 
 @Configuration
 public class StudentConfig {
@@ -18,12 +18,12 @@ public class StudentConfig {
             Student willis = new Student(
                     "Willis",
                     "willis.otondi@gmail.com",
-                    LocalDate.of(2000, JANUARY, 5),
+                    LocalDate.of(2000, 1, 5),
                     21);
             Student alice = new Student(
                     "alice",
                     "alice.otondi@gmail.com",
-                    LocalDate.of(2001, JANUARY, 5),
+                    LocalDate.of(2001, 2, 5),
                     21);
 
             repository.saveAll(
