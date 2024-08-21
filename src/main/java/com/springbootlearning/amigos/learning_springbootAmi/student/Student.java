@@ -1,6 +1,7 @@
 package com.springbootlearning.amigos.learning_springbootAmi.student;
 
 import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.time.LocalDate;
 @Entity
@@ -20,6 +21,7 @@ public class Student {
     private String name;
     private String email;
     private LocalDate dob;
+    @Transient
     private Integer age;
 
     public Student() {
