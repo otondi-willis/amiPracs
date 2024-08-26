@@ -32,4 +32,7 @@ public class StudentService {
         System.out.println(student);
 
     }
+
+    public void deleteStudent(Long studentId) {
+    }
 }
