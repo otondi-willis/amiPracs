@@ -1,7 +1,6 @@
 package com.springbootlearning.amigos.learning_springbootAmi.student;
 
 import jakarta.persistence.*;
-//import javax.persistence.*;
 
 import java.time.LocalDate;
 import java.time.Period;
